@@ -1,0 +1,42 @@
+.header {
+  background-image: url(../../images/bgmobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 480px;
+  height: 552px;
+  /*     margin: 0 auto; */
+  @extend %center-block;
+  padding-top: 19px;
+  padding-bottom: 138px;
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/bgtablet.png");
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url("../images/bgdesktop.png");
+    max-width: 1200px;
+  }
+}
+.auth-list {
+  @extend %flex;
+  column-gap: 9px;
+  .auth-item {
+    &:last-child {
+      border: 2px solid #fff;
+      border-radius: 17px;
+      padding: 11px 5px;
+    }
+    .auth-link {
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 13px;
+      text-align: center;
+      color: #fff;
+    }
+    /* .auth-link:last-child {
+      border: 2px solid #fff;
+      border-radius: 17px;
+    } */
+  }
+}
