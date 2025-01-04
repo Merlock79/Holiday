@@ -1,0 +1,46 @@
+.partners {
+  padding-top: 67px;
+  padding-bottom: 67px;
+  @media screen and (min-width: 768px) {
+    padding-top: 71px;
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 69px;
+    padding-bottom: 72px;
+  }
+  .section-title {
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 14px;
+    width: 288px;
+    @extend %center-block;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 31px;
+      width: 431px;
+    }
+    @media screen and (min-width: 1200px) {
+    }
+  }
+  .main {
+    .partner-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 27px;
+
+      @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        row-gap: 57px;
+        column-gap: 53px;
+      }
+
+      .partner-item {
+        .partner-img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
